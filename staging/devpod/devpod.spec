@@ -1,3 +1,6 @@
+# Disable debuginfo, needed as otherwise the rawhide version errors because of missing build-id for devpod-cli
+%global debug_package %{nil}
+
 Name:           devpod
 # renovate: datasource=github-releases depName=loft-sh/devpod
 Version:        v0.5.18
